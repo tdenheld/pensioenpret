@@ -1,0 +1,78 @@
+/*-------------------
+         Body
+--------------------*/
+
+body {
+	background-color: $light;
+	font-family: $sans-serif;
+	font-size: $font-size-base;
+	font-weight: 200;
+	line-height: $line-height-factor-base;
+	color: $dark;
+	@extend %smooth-font;
+}
+
+
+
+/*-------------------
+        Links
+--------------------*/
+
+a,
+a:hover,
+a:active,
+a:focus,
+a:visited {
+	color: $dark;
+	text-decoration: none;
+	transition: $fade-all;
+}
+
+/*-------------------
+        Buttons
+--------------------*/
+
+button,
+button:hover,
+button:active,
+button:focus,
+button:visited {
+	border-radius: none;
+	outline: none;
+	cursor: pointer;
+	transition: $fade-all;
+}
+
+
+
+/*-------------------
+       Headings
+--------------------*/
+
+h1,
+h2,
+h3 {
+	margin: 0 0 $double-space 0;
+}
+
+h4,
+h5,
+h6 {
+	margin: 0 0 $space 0;
+}
+
+
+
+/*-------------------
+         Misc
+--------------------*/
+
+p {
+	margin: 0;
+}
+
+img,
+svg,
+li {
+	transition: $fade-all;
+}

@@ -1,0 +1,31 @@
+/*-------------------
+      	Timer
+--------------------*/
+
+.timer {
+	padding: $double-space;
+	color: #fff;
+	
+	&__heading {
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: normal;
+		margin-bottom: 0;
+	}
+	
+	&__days {
+		font-size: 240px;
+		line-height: 190px;
+		font-weight: bold;
+	}
+	
+	&__time {
+		font-size: 60px;
+		line-height: 20px;
+		font-weight: normal;
+	}
+	
+	&__label {
+		font-size: 18px;
+	}
+}

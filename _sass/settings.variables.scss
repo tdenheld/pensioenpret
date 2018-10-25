@@ -1,0 +1,102 @@
+/*-------------------
+       Colors
+--------------------*/
+
+$brand-color: 		 			#0099DD;
+$cta-color:			 			#00D8A1;
+
+$brand-color-dark:	 			mix(#000,$brand-color, 15%);
+$cta-color-dark:	 			mix(#000,$cta-color, 15%);
+
+$light:				 			#fff;
+$dark: 				 			mix(#000,$brand-color, 80%);
+
+$grey-1: 			 			mix(#fff,$dark, 10%);
+$grey-2:  			 			mix(#fff,$dark, 20%);
+$grey-3: 			 			mix(#fff,$dark, 30%);
+$grey-4:			 			mix(#fff,$dark, 40%);
+$grey-5:			 			mix(#fff,$dark, 50%);
+$grey-6:			 			mix(#fff,$dark, 60%);
+$grey-7:			 			mix(#fff,$dark, 70%);
+$grey-8:						mix(#fff,$dark, 80%);
+$grey-9:						mix(#fff,$dark, 93%);
+
+
+
+/*-------------------
+        Fonts
+--------------------*/
+
+$txt-xxxs:						12px;
+$txt-xxs:						14px;
+$txt-xs:						16px;
+$txt-s:							18px;
+$txt-m:							22px;
+$txt-l:							28px;
+$txt-xl:						36px;
+$txt-xxl:						42px;
+$txt-xxxl:						58px;
+$txt-xxxxl:						92px;
+
+$sans-serif:					'Barlow Condensed', helvetica, sans-serif;
+$serif:							'Berkshire Swash', times, serif;
+$body-text:						'Crimson Text', times, serif;
+$font-size-base:				$txt-xs;
+$line-height-factor-base:		1.5;
+$line-height-factor-headings:	1;
+$line-height-factor-link:		0.8;
+
+
+
+/*-------------------
+ 	 Breakpoints
+--------------------*/
+
+$xs:	 						480px;
+$sm:	 						768px;
+$md:	 						912px;
+$lg:	 						1200px;
+
+
+
+/*-------------------
+ 	   Spacing
+--------------------*/
+
+$space:	 						12px;
+$half-space: 					$space / 2;
+$double-space: 					$space * 2;
+$triple-space: 					$space * 3;
+$quadruple-space:				$space * 4;
+
+$text-container-s:				710px;
+$text-container-m:				900px;
+
+
+/*-------------------
+      Animation
+--------------------*/
+
+$timing-very-short:				100ms;
+$timing-short: 					200ms;
+$timing-medium: 				300ms;
+$timing-long: 					600ms;
+$timing-very-long:				1s;
+
+$ease:							cubic-bezier(0.700, 0.270, 0.270, 1.000);
+$fade-all: 						all $timing-medium $ease;
+
+
+
+
+/*-------------------
+         Misc
+--------------------*/
+
+$opacity-hover:					0.4;
+$navbar-height:					80px;
+
+
+
+
+

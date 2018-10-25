@@ -1,0 +1,30 @@
+/*-------------------
+      background
+--------------------*/
+
+.photo {
+	@extend %fixed-full-bg;
+	@extend %bg-cover;
+	z-index: 0;
+	background-image: url("/assets/img/img2.jpg");
+}
+
+.filter {
+	@extend %fixed-full-bg;
+	background-color: #000;
+	opacity: 0.30;
+}
+
+.video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
+	background: url('/assets/img/beach.jpg') no-repeat;
+	background-size: cover;
+}

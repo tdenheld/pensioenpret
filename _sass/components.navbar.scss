@@ -1,0 +1,29 @@
+/*-------------------
+        Navbar
+--------------------*/
+
+.navbar {
+	height: $navbar-height;
+	line-height: $navbar-height;
+	background-color: rgba($light, 0.9);
+	font-size: 18px;
+	font-weight: 500;
+	padding: 0 $double-space;
+	box-shadow: 0 1px 0 rgba($dark, 0.2);
+	
+	&__link {
+		display: inline-block;
+		transform: none;
+		transition: $fade-all;
+		
+		&:hover {
+			transform: translateX(-8px);
+		}
+	}
+		
+	// Modifiers
+	// --------------------------------
+	&--fixed-top {
+		@extend %fixed-top-full-width;
+	}
+}

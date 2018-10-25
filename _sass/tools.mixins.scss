@@ -1,0 +1,36 @@
+/*-------------------
+		Mixins
+--------------------*/
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// font
+// ------------------------------
+
+// convert px to rem
+@function calculate-rem($size) {
+  $remSize: $size / $font-size-base;
+  @return #{$remSize}rem;
+}
+
+// set font style
+@mixin font-style($size, $weight, $factor) {
+	font-weight: $weight;
+	font-size: calculate-rem($size);
+	line-height: calculate-rem($size * $factor);
+}
+
+// line height of links is lower number
+@mixin line-height-link($line-height) {
+	line-height: calculate-rem($line-height * $line-height-factor-link);
+}

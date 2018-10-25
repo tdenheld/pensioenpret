@@ -1,0 +1,79 @@
+/*-------------------
+      Containers
+--------------------*/
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 $double-space;
+	overflow: auto;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	position: relative;
+	z-index: 1;
+	height: 100vh;
+	@media (min-width: $sm) {
+		align-items: center;
+	}
+}
+
+
+/*-------------------
+	    Images
+--------------------*/
+
+.img-container {
+	padding: 0 $double-space;
+}
+
+// Responsive images (ensure images don't scale beyond their parents)
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+// Perfect circle
+.img-circle {
+  border-radius: 50%;
+}
+
+
+
+
+/*-------------------
+	   Spacers
+--------------------*/
+
+.spacer-s {
+	margin-bottom: $space;
+}
+
+.spacer-m {
+	margin-bottom: $double-space;
+}
+
+.spacer-l {
+	margin-bottom: 60px;
+}
+
+.spacer-xl {
+	margin-bottom: 90px;
+}
+
+.spacer-xxl {
+	margin-bottom: 180px;
+	@media(max-width: $md) {
+		margin-bottom: 90px;
+	}
+}
+
+.spacer-navbar {
+	margin-bottom: $double-space + $navbar-height;
+	@media (min-width:$sm) {
+		margin-bottom: 48px + $navbar-height;		
+	}
+}

@@ -1,0 +1,73 @@
+/*-------------------
+      	Intro
+--------------------*/
+
+.intro {
+	text-align: center;
+	padding: $double-space;
+	color: $light;
+	text-shadow: 1px 2px 0px rgba(#000, 0.3);
+	
+	&__title {
+		font-family: $serif;
+		font-size: 48px;
+		font-weight: normal;
+		line-height: 1;
+		margin-top: 24px;
+		@media (min-width: $sm) {
+			font-size: 90px;
+			margin-top: 0;
+		}
+	}
+	
+	&__payoff {
+		display: inline-block;
+		font-size: 24px;
+		line-height: 1.2;
+		font-weight: 400;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		margin-bottom: 36px;
+		@media (min-width: $sm) {
+			font-size: 30px;
+			margin-bottom: 72px;
+		}
+	}
+}
+
+.categories {	
+	display: grid;
+	grid-gap: 20px;
+	width: 240px;
+	margin: auto;
+	margin-bottom: 24px;
+	
+	@media (min-width: $sm) {
+		grid-gap: 24px;
+		grid-template-columns: repeat(2, 1fr);
+		width: 520px;
+		margin-bottom: 0;
+	}
+	
+	@media (min-width: 1060px) {
+		grid-template-columns: repeat(4, 1fr);
+		width: 1000px;
+	}
+	
+	&__item {
+		font-size: 20px;
+		font-weight: 500;
+		color: $dark;
+		list-style: none;
+		padding: 6px 0 10px;
+		background-color: #fff;
+		transition: $fade-all;
+		text-align: center;
+		text-shadow: none;
+		border-radius: 80px;
+		
+		&:hover {
+			background-color: rgba(#fff, 0.6);
+		}
+	}
+}
